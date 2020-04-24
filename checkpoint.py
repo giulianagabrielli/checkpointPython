@@ -1,12 +1,12 @@
 listaEmails = []
-inserir = "Sim"
+inserir = "S"
 
 while len(listaEmails) <= 30:
     listaEmails.append(input("Digite o email: ").lower())
 
-while inserir == "Sim" and len(listaEmails) > 30:
+while inserir == "S" and len(listaEmails) > 30:
     listaEmails.append(input("Digite o email: ").lower())
-    inserir = input("Deseja cadastrar mais um email?")
+    inserir = input("Deseja cadastrar mais um email? (S / N)").upper()
 
 emailBuscado = input("Qual é o email que está buscando? ")
 
